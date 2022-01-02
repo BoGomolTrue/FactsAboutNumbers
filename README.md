@@ -1,4 +1,4 @@
-# methodical-vue
+# Facts About Numbers
 
 ## Project setup
 ```
