@@ -52,7 +52,7 @@ export default {
   validations: {
     number: {
       required,
-      between: between(1, 31)
+      between: between(1, 999999999999)
     },
     selected: {
       required

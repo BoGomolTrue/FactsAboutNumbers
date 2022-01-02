@@ -29,7 +29,7 @@
 
 <script>
 import axios from 'axios'
-import { required, between } from 'vuelidate/lib/validators'
+import { required } from 'vuelidate/lib/validators'
 export default {
   name: 'Home',
   components: {
@@ -49,8 +49,7 @@ export default {
   },
   validations: {
     number: {
-      required,
-      between: between(1, 31)
+      required
     },
     selected: {
       required
