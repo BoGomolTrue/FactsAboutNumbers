@@ -75,6 +75,9 @@ export default {
             .then((response) => {
               this.factsTranslate = response.data.data.result.replace(/[0-9]/g, '').replace(/-/g, ' ')
               this.loading = false
+              if (this.factsTranslate.indexOf('numbersapi') > -1) {
+                this.factsTranslate = 'неинтересное число'
+              }
             })
         }
         )

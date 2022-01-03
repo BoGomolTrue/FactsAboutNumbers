@@ -68,6 +68,9 @@ export default {
         .then((response) => {
           this.facts = response.data.replace(/[0-9]/g, '').replace(/-/g, ' ')
           this.loading = false
+          if (this.facts.indexOf('numbersapi') > -1) {
+            this.facts = 'is an uninteresting number.'
+          }
         }
         )
     }
